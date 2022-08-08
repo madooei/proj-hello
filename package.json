@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "Workspace for project Hello!",
+  "scripts": {
+    "client": "yarn workspace hello-widget dev",
+    "server": "yarn workspace hello-api dev",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn client\""
+  },
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}

@@ -1,5 +1,7 @@
+import HelloWidget from "./lib";
+
 function App() {
-  return <>Hello React!</>;
+  return <HelloWidget />;
 }
 
 export default App;

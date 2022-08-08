@@ -1,8 +1,19 @@
 {
   "name": "hello-widget",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.2",
   "license": "UNLICENSED",
+  "files": [
+    "dist",
+    "./src/lib/README.md"
+  ],
+  "main": "./dist/hello-widget.umd.js",
+  "module": "./dist/hello-widget.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/hello-widget.es.js",
+      "require": "./dist/hello-widget.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

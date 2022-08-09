@@ -1,18 +1,20 @@
 {
   "name": "hello-widget",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "UNLICENSED",
-  "type": "module",
-  "files": [
-    "dist",
-    "./src/lib/README.md"
+  "keywords": [
+    "widgets",
+    "react"
   ],
-  "main": "./dist/hello-widget.umd.cjs",
-  "module": "./dist/hello-widget.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/hello-widget.umd.js",
+  "module": "./dist/hello-widget.es.js",
   "exports": {
     ".": {
-      "import": "./dist/hello-widget.js",
-      "require": "./dist/hello-widgett.umd.cjs"
+      "import": "./dist/hello-widget.es.js",
+      "require": "./dist/hello-widgett.umd.js"
     }
   },
   "scripts": {

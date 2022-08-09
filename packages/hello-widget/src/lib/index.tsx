@@ -1,5 +1,5 @@
 function HelloWidget() {
-  return <div>Hello, Widget!</div>;
+  return <div>Hello, GitHub Action!</div>;
 }
 
 export default HelloWidget;
